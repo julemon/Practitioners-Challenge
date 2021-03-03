@@ -21,3 +21,12 @@ Licences ultra low emission vehicles by body type and propulsion or fule type : 
 
 Licensed cars by propulsion or fuel type: 
 https://www.gov.uk/government/statistical-data-sets/veh02-licensed-cars
+
+## Plan until Friday
+1. Bayesian approach for CO2 regression model (Firuza)
+2. More predictors for Lin reg Model for CO2 (Sishi and Robbie)
+3. More predictors for ARIMA model for cars (Sishi)
+4. Twitter/Google webscraping for EV popularity trend (Firuza and ...)
+5. AI application for question 4: Capgemini report, etc. (Dianne and Julia)
+6. Improve scenarios: choose just three out of them (Dianne + everyone)
+7. Further analysis of scenarios (everyone, when they have time)
