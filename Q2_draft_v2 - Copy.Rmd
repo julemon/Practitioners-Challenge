@@ -1,0 +1,233 @@
+---
+title: "Q2 try 2"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+
+```{r, include=FALSE}
+library(tidyverse)
+library(caret)
+library(leaps)
+library(MASS)
+library(car)
+# regression selection
+library(olsrr)
+library(kableExtra)
+```
+
+
+### Considering the constraint of the Climate Change Act and other government targets, produce a model forecasting the carbon emissions of the evolving profile of vehicles on the UK road network. 
+
+##### constraints the UK government have announced. 
+1. By 2030 stop the sale of Petrol and Diesel Cars 
+2. EV cars will make up 43% of UK cars by 2030 and also by 2030 97% of cars being sold will be EV.
+
+##### We want to forecast carbon emissions on the UK road network by predicting what the Greenhouse gas emissions from road transport will be. We end up choosing the model that uses the number of cars and fraction of petrol to predict what the Total GHGs will be. However, nothing is set in stone. We want to go through all the different options we considered before coming to this conclusion.
+
+
+**GHGS = Number of Cars + (Petrol Cars/Total Cars)**
+
+# 1.) Load data 
+
+There is two main data sets. 
++ The first one is df, which has all the data besides Year column. 
++ The second one is df_2010_to_2019 which is a subset of df. This is because the Low_Emissions vehicles only has data from 2010-2018.
+
+
+For a robust analysis we tried for four approaches. The first model will be a casual approach and the last three will be more of a stats approach.**
+
+```{r}
+# load data
+all <- read.csv("GB_all_data - Copy 2.csv")
+colnames(all)[1] <- "Year"
+
+# Petrol + Diesel Cars
+all <- all %>%
+  mutate(Petrol_Diesel = Petrol + Diesel)
+
+# take the date out - this new df will be used for subset regression coming up
+df <- all[,-c(1, 2)]
+
+# remove 2019 - Total GHGs goes up to 2018
+df <- df[1:25,]
+
+# turn into df 
+df <- data.frame(df)
+
+# for further analysis
+df_2010_to_2018 <- df[17:25,]
+```
+
+
+
+```{r}
+# view the all data frame
+kbl(all) %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+
+```
+
+
+
+# Step 2.) Stepwise subset regression
+
+```{r}
+# use all predictors
+m1 <- lm(Total_GHGs ~., data = df)
+
+```
+
+
+
+```{r, warning=FALSE}
+# https://statisticsbyjim.com/regression/guide-stepwise-best-subsets-regression/
+# https://olsrr.rsquaredacademy.com/articles/variable_selection.html
+# change the ols() function, there are cool ones to pick from
+ols_step_best_subset(m1)
+
+```
+
+
+# Step 3.) Modelling 
+
+#### Approach 1 - using data from 2010 - 2019 see if the fraction of Low Emission cars can predict Total GHGs. downside to this is less data
+```{r}
+# Not based on OLS results - rather this is causal inferene
+model2 <- lm(Total_GHGs ~ LE_Fraction, data = df_2010_to_2018)
+
+
+summary(model2)
+```
+
+
+### Model 2 - Using all our year data to predict GHGs. 
+#### Petrol is the # of Petrol vehicles
+
+```{r}
+# Petrol to describe Total GHGs
+model3 <- lm(Total_GHGs ~ Petrol, data = df)
+
+
+# check out model
+summary(model3)
+```
+
+#### Low r - square, but not super low so it's Meh
+
+
+### Model 3.) C02 = Total Cars + Fraction of Petrol cars
+
+```{r}
+model4 <- lm(Total_GHGs ~ Total_Vehicles + Petrol_Fraction, data = df)
+
+
+summary(model4)
+```
+
+```{r}
+coef(model4)
+```
+* Y = Total_GHGs 
+* Intercept = -33982.64 
+* Total_Vehicles = 0.002897256
+* Petrol_Fraction = 93365.83
+
+#### Does this make sense intuitively?
+
+
+
+
+### Model 4.) C02 = (Petrol cars + Diesel Cars) + the log(All Eletric Cas)
+```{r}
+# Petrol to describe Total GHGs
+model5 <- lm(Total_GHGs ~ Petrol_Diesel + log(All_Electric), data = df)
+
+
+# check out model
+summary(model5)
+```
+```{r}
+par(mfrow = c(1, 2))
+plot(df$Petrol_Diesel, df$Total_GHGs)
+plot(df$All_Electric, df$Total_GHGs)
+
+```
+
+
+#### Model 5.) L2 Ridge
+
+```{r}
+library(glmnet)
+model4 <- glmnet(Total_GHGs ~ Total_Vehicles + Petrol_Fraction, data = df)
+```
+
+
+
+# Step 4.) Regression Models diagnostics
+
+### Need to make sure our linear regression model passes the regression assumptions
+
+```{r}
+par(mfrow = c(2, 2))
+ols_plot_resid_qq(model4)
+ols_plot_resid_fit(model4)
+ols_plot_resid_hist(model4)
+ols_test_normality(model4)
+
+
+```
+
+
+```{r}
+# similar thing just w/ base R
+par(mfrow = c(2, 2))
+
+# m3 <- lm(Total_GHGs ~ Petrol, data = df)
+plot(model4)
+```
+
+
+
+
+# Step 5.) Extra stuff
+
+### If Petrol cars causes Total GHGS and we want a X% Decrease in Total GHGs then hopefully Petrol cars are trending down.
+`
+
+```{r}
+library(ggrepel)
+petrol_sales <- all[8:26,]
+
+p1 <- ggplot(petrol_sales, mapping = aes(Year, New_Petrol, label = New_Petrol)) +
+  geom_line() +
+  theme_classic() +
+  labs(title = "Number of new Petrol cars sold in the UK each year") +
+  geom_label_repel()
+
+p1
+```
+
+```{r}
+p2 <- ggplot(petrol_sales, mapping = aes(Year, New_Total, label = New_Total)) +
+  geom_line() +
+  theme_classic() +
+  labs(title = "Number of new cars sold in the UK each year") +
+  geom_label_repel()
+
+p2
+```
+
+
+
+
+```{r}
+p3 <- ggplot(petrol_sales, mapping = aes(Year, New_Total, label = New_Total)) +
+  geom_line() +
+  geom_line(petrol_sales, mapping = aes(Year, New_Petrol)) +
+  theme_classic() 
+
+p3
+```
+
