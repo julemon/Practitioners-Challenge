@@ -23,7 +23,7 @@ Licensed cars by propulsion or fuel type:
 https://www.gov.uk/government/statistical-data-sets/veh02-licensed-cars
 
 ## Plan until Friday
-1. Bayesian approach for CO2 regression model (Firuza)
+1. Bayesian approach for CO2 regression model: for non-standardized data as well (Firuza)
 2. More predictors for Lin reg Model for CO2 (Sishi and Robbie)
 3. More predictors for ARIMA model for cars (Sishi)
 4. Twitter/Google webscraping for EV popularity trend (Firuza and ...)
