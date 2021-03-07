@@ -31,14 +31,6 @@ total_ulev_vehicles: veh0133
 Cars, LCV, HGV, total : veh0101  
 Average CO2 first registered : veh0156  
 
-
-## Possible datasets 
-
-Licences ultra low emission vehicles by body type and propulsion or fule type : https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/942249/veh0133.ods  
-
-Licensed cars by propulsion or fuel type: 
-https://www.gov.uk/government/statistical-data-sets/veh02-licensed-cars
-
 ## Plan until Friday
 1. Bayesian approach for CO2 regression model: for non-standardized data as well (Firuza)
 2. More predictors for Lin reg Model for CO2 (Sishi and Robbie)
