@@ -14,6 +14,23 @@ https://www.gov.uk/government/collections/vehicles-statistics
 
 - Last 5 columns relate to macro economic data
 
+**UPDATE:**   
+  
+Total_Vehicle_km : tra0201  
+averageCO2 (g/km) : veh0206  
+total GHG: NAE data https://naei.beis.gov.uk/data/data-selector-results?q=142224  
+total ulev: veh0133  
+total cars: veh0101  
+petrol and diesel:  veh0203  
+total co2 (in kgt) is  total_Vehicle_km*averageCO2/ 10^9   
+
+**quaterly data** 
+
+total_ulev_cars : veh0133  
+total_ulev_vehicles: veh0133  
+Cars, LCV, HGV, total : veh0101  
+Average CO2 first registered : veh0156  
+
 
 ## Possible datasets 
 
