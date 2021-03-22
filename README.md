@@ -1,5 +1,10 @@
 # Practitioners-Challenge
 
+This is a page for the project for Practitioner's Challenge from the Department of Statistics at LSE and Capgemini.
+
+The main code of the project may be found in the notebook: ...
+
+The main datasets are combined from several csv files from different sources described below.
 
 ## GB all data:
 https://www.gov.uk/government/collections/vehicles-statistics
@@ -31,11 +36,3 @@ total_ulev_vehicles: veh0133
 Cars, LCV, HGV, total : veh0101  
 Average CO2 first registered : veh0156  
 
-## Plan until Friday
-1. Bayesian approach for CO2 regression model: for non-standardized data as well (Firuza)
-2. More predictors for Lin reg Model for CO2 (Sishi and Robbie)
-3. More predictors for ARIMA model for cars (Sishi)
-4. Twitter/Google webscraping for EV popularity trend (Firuza and ...)
-5. AI application for question 4: Capgemini report, etc. (Dianne and Julia)
-6. Improve scenarios: choose just three out of them (Dianne + everyone)
-7. Further analysis of scenarios (everyone, when they have time)
