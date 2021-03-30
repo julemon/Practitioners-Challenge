@@ -17,7 +17,7 @@ Our sources came either from <a href = 'https://www.gov.uk/government/collection
 * *Diesel* - VEH0203  
 * *All_EV* -   ??????
 * *All_ULEV_veh133*- VEH133  
-* *ULEV_fraction* -   ?????? not use
+* *ULEV_fraction* -   All_ULEV_veh133/Total_Cars
 * *UK_population* - prediction taken from the <a href = 'https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/bulletins/nationalpopulationprojections/2018based' >Office of National Statistics</a> (data until 2019)
 * *Total_Vehicle_km*- tra0201  
 * *Average_CO2_(g-km)* - VEH0206
