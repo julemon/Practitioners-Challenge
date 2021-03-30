@@ -18,8 +18,8 @@ Our sources came either from government data about vehicles , National Atmospher
 * *All_EV* -  
 * *All_ULEV_veh133*- VEH133  
 * *ULEV_fraction*  
-* *UK_population *  
-* *Total_Vehicle_km *- tra0201  
+* *UK_population*  
+* *Total_Vehicle_km*- tra0201  
 * *Average_CO2_(g-km)* - VEH0206: Licensed cars at the end of the year by CO2 emission and VED band 1, Great Britain from 2007;  
 * *Average _CO2_cars_first_registered(g-km)* - Table VEH0156:Provisional 1 average reported CO2 emissions figure of cars registered for the first time by data source, monthly, Great Britain from January 2003;  
 * *Total_CO2_(NAE_data)*  - Data from https://naei.beis.gov.uk/data/data-selector (category: cars , light duty tracs, heavy duty truck and buses, motorcycles, other road transport)  
