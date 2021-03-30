@@ -18,7 +18,7 @@ Our sources came either from <a href = 'https://www.gov.uk/government/collection
 * *All_EV* -   ??????
 * *All_ULEV_veh133*- VEH133  
 * *ULEV_fraction* -   ??????
-* *UK_population* - prediction taken from the <a href = 'https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/bulletins/nationalpopulationprojections/2018based' >Office of National Statistics</a>
+* *UK_population* - prediction taken from the <a href = 'https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/bulletins/nationalpopulationprojections/2018based' >Office of National Statistics</a> (data until 2019)
 * *Total_Vehicle_km*- tra0201  
 * *Average_CO2_(g-km)* - VEH0206
 * *Average _CO2_cars_first_registered(g-km)* - Table VEH0156:Provisional 1 average reported CO2 emissions figure of cars registered for the first time by data source, monthly, Great Britain from January 2003;  
@@ -37,6 +37,9 @@ Our sources came either from <a href = 'https://www.gov.uk/government/collection
 * *CO2 emmision: Cars* -   ??????
 * *Average CO2 first registered* - veh0156
 
+### UK_population.csv
+
+* *UK_population* - full prediciton until 2043  taken from the <a href = 'https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/bulletins/nationalpopulationprojections/2018based' >Office of National Statistics</a>
 
 ## Scenario 1
 
