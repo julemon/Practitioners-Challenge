@@ -37,7 +37,6 @@ Our sources came either from <a href = 'https://www.gov.uk/government/collection
 * *CO2 emmision: Cars* -   ??????
 * *Average CO2 first registered* - veh0156
 
-### UK_population.csv
 
 ## Scenario 1
 
