@@ -16,7 +16,6 @@ Our sources came either from <a href = 'https://www.gov.uk/government/collection
 * *Petrol* - VEH0203
 * *Diesel* - VEH0203  
 * *All_EV* -  Sum of Hybrid Electric, Plug-in Hybrid Electric, Battery Electric, Range-Extended Electric, Fuel Cell Electric from VEH0203
-
 * *All_ULEV_veh133*- VEH133  
 * *ULEV_fraction* -   All_ULEV_veh133/Total_Cars
 * *UK_population* - prediction taken from the <a href = 'https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/bulletins/nationalpopulationprojections/2018based' >Office of National Statistics</a> (data until 2019)
