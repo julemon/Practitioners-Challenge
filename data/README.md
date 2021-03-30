@@ -43,7 +43,7 @@ Our sources came either from <a href = 'https://www.gov.uk/government/collection
 
 ## Scenario 1 (Social Awareness)
 
-- uses Google trend data for differrent terms connected to the electric vehicles. The Google search trends can be downloaded here [https://trends.google.com/trends/?geo=US](https://trends.google.com/trends/?geo=US)
+- uses Google trend data for differrent terms connected to the electric vehicles (the file [UK_pivotGoogle_orig.csv](UK_pivotGoogle_orig.csv)). The Google search trends can be downloaded here [https://trends.google.com/trends/?geo=US](https://trends.google.com/trends/?geo=US)
 
 ## Scenario 2 
 - 
