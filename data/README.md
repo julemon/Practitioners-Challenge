@@ -32,10 +32,6 @@ Our sources came either from <a href = 'https://www.gov.uk/government/collection
 * *Total* - VEH0101
 * *All_ULEV_cars* - VEH133  
 * *All_ULEV_vehicles* - VEH133  
-* *Greenhouse gas emissions from road transport* -   ??????
-* *Available Charging devices* -   ??????
-* *CO2 emmision: Cars* -   ??????
-* *Average CO2 first registered* - veh0156
 
 ### UK_population.csv
 
