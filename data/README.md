@@ -42,8 +42,10 @@ Our sources came either from <a href = 'https://www.gov.uk/government/collection
 - uses Google trend data for differrent terms connected to the electric vehicles (the file [UK_pivotGoogle_orig.csv](UK_pivotGoogle_orig.csv)). The Google search trends can be downloaded here [https://trends.google.com/trends/?geo=US](https://trends.google.com/trends/?geo=US)
 
 ## Scenario 2 
-- 
-
+- Transport use during the coronavirus (COVID-19) pandemic : https://www.gov.uk/government/statistics/transport-use-during-the-coronavirus-covid-19-pandemic
+- Daily Carbon emission https://carbonmonitor.org (data filtered for UK, for Ground Transport sector from 1st January 2019 to 31st December 2020)
+- Homeworking, data from the Office of National Statistis: https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/bulletins/coronavirustheukeconomyandsocietyfasterindicators/1october2020#measuring-the-data
+- Homeworking, data from EU Open Portal : https://data.europa.eu/euodp/en/data/dataset/orJJzGDF3cnXimvsoKDfXw (data is cleaned and filtered for emplyed people in UK in order to get a baseline of homewoking pre-covid times inside the scenario2 ipyb)
 
 ## Scenario 3
 - [market-share-of-electric-cars-in-norway](https://www.statista.com/statistics/1029909/market-share-of-electric-cars-in-norway/)
