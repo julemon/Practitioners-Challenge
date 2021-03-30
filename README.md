@@ -8,6 +8,4 @@ Main_code.ipynb (the code for Q2 and Norway /social awareness scenarios of Q3)
 
 Scenario2-homeworking.ipynb (the code for 50% homeworking scenarios of Q3)
 
-The main datasets are combined from several csv files from different sources described below.
-
-Note: Data details are in the 'data' folder
+The main datasets are combined from several csv files from different sources described in details in the 'data' folder.
