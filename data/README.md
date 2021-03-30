@@ -5,7 +5,7 @@
 
 Data used for predicting CO2 emission in model 2 can be found in GB_all_data.csv and data_quaterly.csv. While GB_all_data.csv was used to find best predictors, we used data_quaterly.csv to predict number of vehicles until 2030. 
 
-Our sources came either from <a href = 'https://www.gov.uk/government/collections/vehicles-statistics' >government data about vehicles</a> , <a href = 'https://naei.beis.gov.uk/data/data-selector'>National Atmospheric Emissions Inventory</a> and…..population…. . Please find exact details about source of each variable below, that includes either specific file names or filters used to extract the variables.
+Our sources came either from <a href = 'https://www.gov.uk/government/collections/vehicles-statistics' >government data about vehicles</a> , <a href = 'https://naei.beis.gov.uk/data/data-selector'>National Atmospheric Emissions Inventory</a> and…..population…. . Please find exact details about source of each variable below, that includes either specific file name or filters used to extract the variables.
 
 ### GB_all_data.csv 
 
