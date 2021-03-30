@@ -9,7 +9,7 @@ Our sources came either from <a href = 'https://www.gov.uk/government/collection
 
 ### GB_all_data.csv 
 
-* *Total_CO2_kilotonne*   - $total_Vehicle_km * averageCO_2 / 10^9$
+* *Total_CO2_kilotonne*   - $ total_Vehicle_km * averageCO_2 / 10^9 $
 * *Total_GHGs_kilotonne* -  Data from <a href = 'https://naei.beis.gov.uk/data/data-selector-results?q=142945'> NAEI </a> (category: cars , light duty tracs, heavy duty truck and buses, motorcycles, other road transport)  
 * *Total_Cars* - VEH0101  
 * *Total_ULEV_cars* - VEH0133  
