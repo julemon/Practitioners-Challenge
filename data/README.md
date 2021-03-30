@@ -4,6 +4,8 @@
 ## Model in question 2
 
 - GB_all_data.csv
+- UK_population.csv
+- data_quarterly.csv
 
 ## Scenario 1
 
