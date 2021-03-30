@@ -10,6 +10,6 @@ The main code of the project may be found in the notebook:
 [Scenario2-homeworking.ipynb](Scenario2-homeworking.ipynb) (the code for 50% homeworking scenario)
 
 ## Data
-The main datasets are combined from several csv files from different sources described in details in the [readme file](data/readme.md) of the folder ```/data```.
+The main datasets are combined from several csv files from different sources described in details in the [readme file](data/README.md) of the folder ```/data```.
 
 
