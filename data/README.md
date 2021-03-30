@@ -5,7 +5,7 @@
 
 Data used for predicting CO2 emission in model 2 can be found in UK_population.csv, GB_all_data.csv and data_quaterly.csv. While GB_all_data.csv was used to find best predictors, we used data_quaterly.csv to predict number of vehicles until 2030. Based on these, we use GB_all_data.csv, data_quaterly.csv and UK_population.csv to get the project of CO2 emissions.
 
-Our sources came either from <a href = 'https://www.gov.uk/government/collections/vehicles-statistics' >government data about vehicles</a> , <a href = 'https://naei.beis.gov.uk/data/data-selector'>National Atmospheric Emissions Inventory</a> and…..population…. . Please find exact details about source of each variable below, that includes either specific file name or filters used to extract the variables.
+Our sources came either from <a href = 'https://www.gov.uk/government/collections/vehicles-statistics' >government data about vehicles</a> , <a href = 'https://naei.beis.gov.uk/data/data-selector'>National Atmospheric Emissions Inventory</a> and <a href = 'https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/bulletins/nationalpopulationprojections/2018based' >Office of National Statistics</a> . Please find exact details about source of each variable below, that includes either specific file name or filters used to extract the variables.
 
 ### GB_all_data.csv 
 
@@ -18,7 +18,7 @@ Our sources came either from <a href = 'https://www.gov.uk/government/collection
 * *All_EV* -   ??????
 * *All_ULEV_veh133*- VEH133  
 * *ULEV_fraction* -   ??????
-* *UK_population* -   ??????
+* *UK_population* - prediction taken from the<a href = 'https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/bulletins/nationalpopulationprojections/2018based' >Office of National Statistics</a>
 * *Total_Vehicle_km*- tra0201  
 * *Average_CO2_(g-km)* - VEH0206
 * *Average _CO2_cars_first_registered(g-km)* - Table VEH0156:Provisional 1 average reported CO2 emissions figure of cars registered for the first time by data source, monthly, Great Britain from January 2003;  
