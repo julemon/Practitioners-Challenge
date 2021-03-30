@@ -39,7 +39,7 @@ Our sources came either from <a href = 'https://www.gov.uk/government/collection
 
 ### UK_population.csv
 
-* *UK_population* - full prediciton until 2043  taken from the <a href = 'https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/bulletins/nationalpopulationprojections/2018based' >Office of National Statistics</a>
+* *UK_population* - full prediction until 2043  taken from the <a href = 'https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/bulletins/nationalpopulationprojections/2018based' >Office of National Statistics</a>
 
 ## Scenario 1
 
