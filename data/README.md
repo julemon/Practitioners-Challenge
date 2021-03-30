@@ -1,7 +1,7 @@
 
 # Data Sources
 
-## Model in question 2
+## Model for CO2 emission (Question 2)
 
 Data used for predicting CO2 emission in model 2 can be found in GB_all_data.csv and data_quaterly.csv. While GB_all_data.csv was used to find best predictors, we used data_quaterly.csv to predict number of vehicles until 2030. 
 
