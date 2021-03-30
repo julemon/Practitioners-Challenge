@@ -3,16 +3,18 @@
 
 ## Model in question 2
 
-
+- 
 
 ## Scenario 1
 
+- 
 
 ## Scenario 2 
+- 
 
 
 ## Scenario 3
-
+- 
 
 
 
